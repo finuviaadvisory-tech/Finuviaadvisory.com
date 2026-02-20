@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finuvia Advisory | Modern Consulting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0f172a; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+        }
+        .gold-text {
+            background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-active {
+            color: #fbbf24;
+            border-bottom: 2px solid #fbbf24;
+        }
+        /* Custom form styling to match the theme */
+        input, textarea, select {
+            background: rgba(255, 255, 255, 0.05) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            color: white !important;
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: #fbbf24 !important;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.2);
+        }
+    </style>
+</head>
+<body class="text-slate-200 antialiased min-h-screen flex flex-col">
+
+    <header class="sticky top-0 z-50 glass-card border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+        
+        <a href="javascript:void(0)" onclick="showPage('home')" class="flex items-center gap-2 group cursor-pointer">
+            <div class="w-8 h-8 gold-gradient rounded-lg shadow-[0_0_15px_rgba(217,119,6,0.3)] transition-transform group-hover:scale-110"></div>
+            <span class="text-xl font-bold tracking-tight text-white uppercase">FINUVIA</span>
+        </a>
+            
+            <nav class="hidden md:flex space-x-8">
+                <button onclick="showPage('home')" class="nav-btn text-xs font-bold uppercase tracking-widest hover:text-amber-400 transition-colors py-2">Home</button>
+                <button onclick="showPage('services')" class="nav-btn text-xs font-bold uppercase tracking-widest hover:text-amber-400 transition-colors py-2">Services</button>
+                <button onclick="showPage('about')" class="nav-btn text-xs font-bold uppercase tracking-widest hover:text-amber-400 transition-colors py-2">About</button>
+                <button onclick="showPage('contact')" class="nav-btn text-xs font-bold uppercase tracking-widest hover:text-amber-400 transition-colors py-2">Contact</button>
+                <button onclick="showPage('Review')" class="nav-btn text-xs font-bold uppercase tracking-widest hover:text-amber-400 transition-colors py-2">Reviews</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-6 py-12 w-full">
+
+        <section id="home" class="page-content space-y-12">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7">
+                    <span class="text-amber-500 font-bold tracking-[0.3em] uppercase text-xs mb-4 block">Premier Financial Consulting</span>
+                    <h1 class="text-5xl lg:text-7xl font-bold text-white mb-8 leading-tight">
+                        Expert <span class="gold-text">Tax</span> <br> Strategy.
+                    </h1>
+                    <p class="text-lg text-slate-400 max-w-xl mb-10 leading-relaxed">
+                        We offer specialized tax consultation designed to help individuals and businesses legally minimize liability and maximize financial growth since 2024.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button onclick="showPage('services')" class="gold-gradient text-slate-900 px-8 py-4 rounded-2xl font-bold hover:scale-105 transition-all shadow-xl">
+                            Explore Services
+                        </button>
+                        
+                        <!-- ✅ WHATSAPP BUTTON (UPDATED) -->
+<a href="https://wa.me/919582691663?text=Hello%20Finuvia%20Advisory!%20I%20want%20to%20talk%20to%20an%20expert."
+target="_blank"
+class="bg-white/10 border border-white/20 text-white px-8 py-4 rounded-2xl font-bold inline-flex items-center gap-2">
+
+<i class="fab fa-whatsapp"></i>
+Talk to an Expert
+</a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                <div class="absolute -inset-4 gold-gradient opacity-20 blur-3xl rounded-full"></div>
+                <div class="relative rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
+                    <img class="w-full h-auto aspect-[11/8] " 
+                        <img src="https://www.vbvassoc.com/wp-content/uploads/2021/06/VBV-Blog.jpg" class="w-full grayscale hover:grayscale-0 transition-all duration-700" alt="Consulting">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="page-content hidden">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Our Specialized <span class="gold-text">Solutions</span></h2>
+                <div class="w-24 h-1 gold-gradient mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+            <div class="group glass-card p-10 rounded-[2.5rem] transition-all duration-500 hover:bg-white/5 hover:-translate-y-2">
+                <div class="w-14 h-14 gold-gradient rounded-2xl flex items-center justify-center text-slate-900 mb-8 shadow-lg shadow-amber-500/20">
+                    <i class="fas fa-id-card text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">GST Registration</h3>
+                <p class="text-slate-400 mb-8 leading-relaxed">
+                    Step-by-step assistance for new businesses. We handle document validation, ARN tracking, and final certificate delivery.
+                </p>
+                <div class="flex items-center justify-between mt-auto border-t border-white/5 pt-8">
+                    <div>
+                        <span class="block text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">One-time Fee</span>
+                        <span class="text-3xl font-bold text-white">₹1,999</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-auto border-t border-white/5 pt-8">
+    
+    <a href="https://wa.me/919582691663?text=Hello%20Finuvia%20Advisory!%20I%20want%20to%20register%20for%20GST.%20(Fee:%20₹1,999)" 
+       target="_blank"
+       class="bg-white text-slate-900 px-8 py-4 rounded-2xl font-bold hover:gold-gradient hover:text-white transition-all shadow-xl inline-block">
+        Place order
+    </a>
+</div>
+</div>
+            </div>
+
+            <div class="group glass-card p-10 rounded-[2.5rem] transition-all duration-500 hover:bg-white/5 hover:-translate-y-2 relative overflow-hidden">
+                <div class="absolute top-0 right-0 gold-gradient text-[10px] font-black px-4 py-1 rounded-bl-xl text-slate-900 uppercase">Popular</div>
+                <div class="w-14 h-14 gold-gradient rounded-2xl flex items-center justify-center text-slate-900 mb-8 shadow-lg shadow-amber-500/20">
+                    <i class="fas fa-file-invoice text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">GST Return Filing</h3>
+                <p class="text-slate-400 mb-8 leading-relaxed">
+                    End-to-end filing for GSTR-1, 3B, and GSTR-9. We ensure reconciled data to help you claim maximum Input Tax Credit.
+                </p>
+                <div class="flex items-center justify-between mt-auto border-t border-white/5 pt-8">
+                    <div>
+                        <span class="block text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Starting At</span>
+                        <span class="text-3xl font-bold text-white">₹1,000</span>
+                    </div>
+                    <a href="https://wa.me/919582691663?text=Hello%20Finuvia%20Advisory!%20I%20need%20help%20with%20GST%20Return%20Filing." 
+   target="_blank"
+   class="bg-white text-slate-900 px-8 py-4 rounded-2xl font-bold hover:gold-gradient hover:text-white transition-all shadow-xl inline-block">
+    Place order
+</a>
+                </div>
+            </div>
+        </div>
+<br></br>
+            <div class="grid md:grid-cols-2 gap-8">
+            <div class="group glass-card p-10 rounded-[2.5rem] transition-all duration-500 hover:bg-white/5 hover:-translate-y-2">
+                <div class="w-14 h-14 gold-gradient rounded-2xl flex items-center justify-center text-slate-900 mb-8 shadow-lg shadow-amber-500/20">
+                    <i class="fas fa-id-card text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">ITR-1</h3>
+                <p class="text-slate-400 mb-8 leading-relaxed">
+                    Best for salaried professionals with income from a single house or interest.
+                </p>
+                <div class="flex items-center justify-between mt-auto border-t border-white/5 pt-8">
+                    <div>
+                        <span class="block text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">One-time Fee</span>
+                        <span class="text-3xl font-bold text-white">₹999</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-auto border-t border-white/5 pt-8">
+    
+    <a href="https://wa.me/919582691663?text=Hello%20Finuvia%20Advisory!%20I%20want%20to%20file%20my%20ITR1." 
+       target="_blank"
+       class="bg-white text-slate-900 px-8 py-4 rounded-2xl font-bold hover:gold-gradient hover:text-white transition-all shadow-xl inline-block">
+        Place order
+    </a>
+</div>
+</div>
+            </div>
+
+            <div class="group glass-card p-10 rounded-[2.5rem] transition-all duration-500 hover:bg-white/5 hover:-translate-y-2 relative overflow-hidden">
+                <div class="absolute top-0 right-0 gold-gradient text-[10px] font-black px-4 py-1 rounded-bl-xl text-slate-900 uppercase">Popular</div>
+                <div class="w-14 h-14 gold-gradient rounded-2xl flex items-center justify-center text-slate-900 mb-8 shadow-lg shadow-amber-500/20">
+                    <i class="fas fa-file-invoice text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">ITR-4</h3>
+                <p class="text-slate-400 mb-8 leading-relaxed">
+                    Tailored for small business owners and freelancers under presumptive taxation.
+                </p>
+                <div class="flex items-center justify-between mt-auto border-t border-white/5 pt-8">
+                    <div>
+                        <span class="block text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Starting At</span>
+                        <span class="text-3xl font-bold text-white">₹1,499</span>
+                    </div>
+                    <a href="https://wa.me/919582691663?text=Hello%20Finuvia%20Advisory!%20I%20want%20to%20file%20my%20ITR4%20Retrun%20Filing." 
+   target="_blank"
+   class="bg-white text-slate-900 px-8 py-4 rounded-2xl font-bold hover:gold-gradient hover:text-white transition-all shadow-xl inline-block">
+    Place order
+</a>
+                </div>
+            </div>
+        </div>
+        <br> </br>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="group glass-card p-10 rounded-[2.5rem] transition-all duration-500 hover:bg-white/5 hover:-translate-y-2">
+                <div class="w-14 h-14 gold-gradient rounded-2xl flex items-center justify-center text-slate-900 mb-8 shadow-lg shadow-amber-500/20">
+                    <i class="fas fa-id-card text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">MSME Registration</h3>
+                <p class="text-slate-400 mb-8 leading-relaxed">
+                     Udyam Registration is a paperless, self-declaration-based process that provides businesses with an official identity under the Ministry of Micro, Small, and Medium Enterprises.
+                </p>
+                <div class="flex items-center justify-between mt-auto border-t border-white/5 pt-8">
+                    <div>
+                        <span class="block text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">One-time Fee</span>
+                        <span class="text-3xl font-bold text-white">₹799</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-auto border-t border-white/5 pt-8">
+    
+                    <a href="https://wa.me/919582691663?text=Hello%20Finuvia%20Advisory!%20I%20need%20help%20with%20MSME%20Registration." 
+       target="_blank"
+       class="bg-white text-slate-900 px-8 py-4 rounded-2xl font-bold hover:gold-gradient hover:text-white transition-all shadow-xl inline-block">
+        Place order
+    </a>
+</div>
+</div>
+            </div>
+
+            <div class="group glass-card p-10 rounded-[2.5rem] transition-all duration-500 hover:bg-white/5 hover:-translate-y-2 relative overflow-hidden">
+                <div class="absolute top-0 right-0 gold-gradient text-[10px] font-black px-4 py-1 rounded-bl-xl text-slate-900 uppercase">Popular</div>
+                <div class="w-14 h-14 gold-gradient rounded-2xl flex items-center justify-center text-slate-900 mb-8 shadow-lg shadow-amber-500/20">
+                    <i class="fas fa-file-invoice text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">PAN TAN Apply</h3>
+                <p class="text-slate-400 mb-8 leading-relaxed">
+PAN Application:asistance with new PAN card applications for individuals and entities using the official Form 49A/49AA.<br></br>
+TAN Application: Support for businesses that need to obtain a TAN using Form 49B for TDS/TCS compliance.                </p>
+                <div class="flex items-center justify-between mt-auto border-t border-white/5 pt-8">
+                    <div>
+                        <span class="block text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Starting At</span>
+                        <span class="text-3xl font-bold text-white">₹599</span>
+                    </div>
+                    <a href="https://wa.me/919582691663?text=Hello%20Finuvia%20Advisory!%20I%20want%20to%20make%20my%20PAN%20or%20TAN." 
+   target="_blank"
+   class="bg-white text-slate-900 px-8 py-4 rounded-2xl font-bold hover:gold-gradient hover:text-white transition-all shadow-xl inline-block">
+    Place order
+</a>
+                </div>
+            </div>
+        </div>
+
+
+        
+        </section>
+
+        <section id="about" class="page-content hidden max-w-4xl mx-auto">
+            <div class="glass-card p-10 rounded-[3rem] border-amber-500/20">
+                <h2 class="text-3xl font-bold text-white mb-6">Vision & <span class="gold-text">Leadership</span></h2>
+                <div class="space-y-8">
+                    <div class="bg-white/5 p-6 rounded-2xl border-l-4 border-amber-500">
+                        <p class="text-amber-500 font-bold uppercase text-xs tracking-widest mb-2">Our Mission</p>
+                        <p class="text-slate-300">To empower organizations globally through strategic consulting, leading them to unprecedented success and technological mastery.</p>
+                    </div>
+                    
+                    <div class="flex items-center gap-6 p-6 bg-white/5 rounded-2xl">
+                        <div class="w-20 h-20 rounded-full gold-gradient p-1">
+                            <img class="w-full h-full rounded-full object-cover" src="https://placehold.co/100x100/1e293b/fbbf24?text=NK" alt="Leader">
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Nidhanshu Kumar</h4>
+                            <p class="text-amber-500 text-sm font-semibold">Senior Tax Consultant</p>
+                            <p class="text-slate-400 text-sm mt-2">Leading the strategic direction and long-term value creation at Finuvia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-content hidden">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="glass-card p-10 rounded-[2.5rem]">
+                    <h3 class="text-2xl font-bold text-white mb-8">Place Your <span class="gold-text">Order</span></h3>
+                    <form onsubmit="event.preventDefault(); showContactMessage()" class="space-y-5">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Full Name</label>
+                            <input type="text" id="name" required class="w-full p-4 rounded-xl">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Email Address</label>
+                            <input type="email" id="email" required class="w-full p-4 rounded-xl">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Service Required</label>
+                            <textarea id="message" rows="4" required class="w-full p-4 rounded-xl" placeholder="Describe the tax services you need..."></textarea>
+                        </div>
+                
+<!-- ✅ WHATSAPP BUTTON (UPDATED) -->
+<a href="https://wa.me/919582691663?text=Hello%20Finuvia%20Advisory!%20I%20want%20to%20talk%20to%20an%20expert."
+target="_blank"
+class="bg-white\/10 border border-white/20 text-white px-8 py-4 rounded-2xl font-bold inline-flex items-center gap-2">
+
+
+PLACE YOUR ORDER
+</a>
+                        <div id="contact-message" class="hidden p-4 bg-emerald-500/10 border border-emerald-500/50 text-emerald-500 rounded-xl text-center text-sm">
+                            Order received! We'll reach out shortly.
+                        </div>
+                    </form>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="glass-card p-8 rounded-3xl flex items-center gap-6">
+                        <div class="w-12 h-12 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20">
+                            <i class="fas fa-envelope text-amber-500"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">Email Us</p>
+                            <p class="text-white font-medium">finuviaadvisory@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="glass-card p-8 rounded-3xl flex items-center gap-6">
+                        <div class="w-12 h-12 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20">
+                            <i class="fas fa-phone text-amber-500"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">Call Expert</p>
+                            <p class="text-white font-medium">+91 9582691663</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Review" class="page-content hidden">
+            <div class="max-w-2xl mx-auto space-y-12">
+                <div class="glass-card p-10 rounded-[2.5rem]">
+                    <h3 class="text-2xl font-bold text-white mb-8 text-center">Share Your <span class="gold-text">Experience</span></h3>
+                    <form onsubmit="event.preventDefault(); showReviewMessage()" class="space-y-5">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Name</label>
+                                <input type="text" id="Review-name" class="w-full p-4 rounded-xl">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Rating</label>
+                                <select id="rating" required class="w-full p-4 rounded-xl appearance-none">
+                                    <option value="5">5 - Excellent</option>
+                                    <option value="4">4 - Very Good</option>
+                                    <option value="3">3 - Good</option>
+                                    <option value="2">2 - Fair</option>
+                                    <option value="1">1 - Poor</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Comments</label>
+                            <textarea id="comments" rows="3" required class="w-full p-4 rounded-xl" placeholder="How did we do?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full gold-gradient text-slate-900 font-bold py-4 rounded-xl transition-all">
+                            Submit Review
+                        </button>
+                        <div id="Review-message" class="hidden p-4 bg-emerald-500/10 border border-emerald-500/50 text-emerald-500 rounded-xl text-center text-sm">
+                            Thank you for your valuable feedback!
+                        </div>
+                    </form>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-8 border-b border-white/5 pb-4">Recent <span class="gold-text">Testimonials</span></h3>
+                    <div id="reviews-list" class="space-y-4">
+                        <p class="text-slate-500 italic text-center">No reviews yet. Be the first!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-10 border-t border-slate-800/50">
+        <p class="text-slate-600 text-[10px] tracking-[0.4em] uppercase font-medium">Finuvia Advisory &copy; 2024 | Global Compliance Standards</p>
+    </footer>
+
+    <script>
+        const pages = ['home', 'services', 'about', 'contact', 'Review'];
+        
+        function showPage(pageId) {
+            pages.forEach(id => {
+                const page = document.getElementById(id);
+                if (page) page.classList.add('hidden');
+            });
+
+            document.getElementById(pageId).classList.remove('hidden');
+            
+            // Update Active Nav Link
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('nav-active');
+                if (btn.getAttribute('onclick').includes(pageId)) {
+                    btn.classList.add('nav-active');
+                }
+            });
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        async function showContactMessage() {
+            const contactData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+
+            const response = await fetch('/submit_contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(contactData)
+            });
+
+            if (response.ok) {
+                document.getElementById('contact-message').classList.remove('hidden');
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+                setTimeout(() => document.getElementById('contact-message').classList.add('hidden'), 5000);
+            }
+        }
+
+        async function showReviewMessage() {
+            const reviewData = {
+                name: document.getElementById('Review-name').value || "Anonymous",
+                rating: document.getElementById('rating').value,
+                comments: document.getElementById('comments').value
+            };
+
+            const response = await fetch('/submit_review', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(reviewData)
+            });
+
+            if (response.ok) {
+                document.getElementById('Review-message').classList.remove('hidden');
+                document.getElementById('Review-name').value = '';
+                document.getElementById('comments').value = '';
+                loadReviews();
+                setTimeout(() => document.getElementById('Review-message').classList.add('hidden'), 3000);
+            }
+        }
+
+        async function loadReviews() {
+            const response = await fetch('/get_reviews');
+            const reviews = await response.json();
+            const listContainer = document.getElementById('reviews-list');
+            
+            if (reviews.length === 0) return;
+            listContainer.innerHTML = ''; 
+
+            reviews.forEach(rev => {
+                const reviewHtml = `
+                    <div class="p-6 glass-card rounded-2xl border-white/5">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="font-bold text-white">${rev.Name}</span>
+                            <span class="text-amber-500 text-sm">${'★'.repeat(rev.Rating)}</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">${rev.Comments}</p>
+                    </div>
+                `;
+                listContainer.innerHTML += reviewHtml;
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showPage('home');
+            loadReviews(); 
+        });
+    </script> 
+    <a href="https://wa.me/919582691663" 
+   class="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center text-white text-2xl shadow-2xl z-[100] hover:scale-110 transition-transform">
+    <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>
